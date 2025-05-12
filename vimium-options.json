@@ -1,0 +1,5 @@
+{
+  "keyMappings": "# Insert your preferred key mappings here.\nmapkey w q\nmapkey W Q\n\nmapkey l w\nmapkey L W\n\nmapkey r e\nmapkey R E\n\nmapkey b r\nmapkey B R\n\nmapkey z t\nmapkey Z T\n\nmapkey ; y\nmapkey : Y\n\nmapkey q u\nmapkey Q U\n\nmapkey u i\nmapkey U I\n\nmapkey d o\nmapkey D O\n\nmapkey j p\nmapkey J P\n\nmapkey s a\nmapkey S A\n\nmapkey h s \nmapkey H S\n\nmapkey n d\nmapkey N D\n\nmapkey t f\nmapkey T F\n\nmapkey , g\nmapkey < G\n\nmapkey . h\nmapkey > H\n\nmapkey a j\nmapkey A J\n\nmapkey e k\nmapkey E K\n\nmapkey o l\nmapkey O L\n\nmapkey i ;\nmapkey I :\n\nmapkey f z\nmapkey F Z\n\nmapkey m x\nmapkey M X\n\nmapkey v c\nmapkey V C\n\nmapkey c v\nmapkey C V\n\nmapkey / b\nmapkey ? B\n\nmapkey g n\nmapkey G N\n\nmapkey p m\nmapkey P M\n\nmapkey x ,\nmapkey X <\n\nmapkey k .\nmapkey K >\n\nmapkey y /\nmapkey Y ?",
+  "linkHintCharacters": "szdfjklewcmpgh",
+  "settingsVersion": "2.2.1"
+}
