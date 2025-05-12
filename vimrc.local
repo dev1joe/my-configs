@@ -1,0 +1,45 @@
+" /etc/vim/vimrc.local
+" First Row
+" nnoremap w q
+
+nnoremap l w " Navigation: move FORWARD START of word
+nnoremap r e " Navigation: move FORWARD END of work
+
+" nnoremap b r
+" nnoremap z t
+" nnoremap ; y
+" nnoremap q u
+
+nnoremap u i " insert mode
+
+" nnoremap d o
+" nnoremap j p
+
+" Second Row
+" nnoremap s a
+" nnoremap h s
+" nnoremap n d
+" nnoremap t f
+" nnoremap , g
+
+
+nnoremap . h " Navigation: cursor left
+nnoremap a j " Navigation: cursor down
+nnoremap e k " Navigation: cursor up
+nnoremap o l " Navigation: cursor right
+
+" nnoremap i ;
+
+" Third Row
+" nnoremap f z
+" nnoremap m x
+" nnoremap v c
+" nnoremap c v
+
+nnoremap / b " Navigation: move BACKWARD START of word
+
+" nnoremap g n
+" nnoremap p m
+" nnoremap x ,
+" nnoremap k .
+" nnoremap y /
