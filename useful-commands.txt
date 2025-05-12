@@ -1,0 +1,39 @@
+# list the files in current directory and filter the result to show files with specific extension
+` ls ~/Desktop | grep -i '.png' `
+
+# loop over some zipped file and unzip them
+# it can be replicated for any other file extention and any command
+`for f in *.rar; do unrar x "$f" && rm "$f"; done`
+
+# move something to the trash (on your ubuntu machine)
+`gio trash /path/to/file`
+
+# resize an image
+`convert image.png -resize 1920x1080 1920x1080-image.png`
+
+# convert an image to another format
+# this creates a new file, no worries about losing the original file
+`convert image.jpg image.png`
+
+# batch convert from one image format to another
+# convert from jpg to png
+`mogrify -format png *.jpg`
+
+# get image metadata
+`identify image.jpg`
+or
+`identify -verbose image.jpg`
+or
+file image.jpg
+
+# change starship preset
+`starship preset <your-preset> -o ~/.config/starship.toml`
+your-preset = pure-preset / gruvbox-rainbow / tokyo-night / etc...
+
+# zip a folder
+zip -r Documents.zip Documents/
+
+# install fonts
+- `sudo mv *.ttf /usr/share/fonts/`
+- `fc-list` to list all available fonts
+- `fc-cache -fv` to rebuild the font cache
