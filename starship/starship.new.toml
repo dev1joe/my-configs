@@ -1,0 +1,40 @@
+format = """
+[╭─](bold white)\
+[](fg:#282A30)\
+$username\
+[  ](bg:#282A30 fg:#CCCACD)\
+[](bg:#CCCACD fg:#282A30)\
+$directory\
+[](fg:#CCCACD)
+[╰─](bold white) ❯❯ 
+"""
+
+# make arrows very bold not just bold
+
+[username]
+show_always = true
+style_user = "bg:#282A30 fg:#CCCACD"
+style_root = "bg:#282A30 fg:#CCCACD"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:#282A30 bg:#CCCACD"
+format = "[ $path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+
+[git_status]
+style = "bg:color_aqua"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
