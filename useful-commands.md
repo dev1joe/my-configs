@@ -80,8 +80,9 @@ zip -r Documents.zip Documents/
     - use the `-r` flag if you're copying a folder
 
 # Python
-- `python3 -m venv <path>/<venv name>`: create a python virtual environment
-    - `<path>/<venv name>` may look like `/projects/testProject/pyenv` where `/projects/testProject` is `<path>` and `pyenv` is `<venv name>`
+- `python3 -m venv <path>/<venv_name>`: create a python virtual environment
+    - `<path>/<venv_name>` may look like `/projects/testProject/pyenv` where `/projects/testProject` is `<path>` and `pyenv` is `<venv_name>`
+    - `python -m venv --system-site-packages ~/pyenv`: use `--system-site-packages` flag to give the virtual environment access to the system site-packages directory.
 
 # file inspection
 - `cat <file path>`: print file content in terminal
@@ -93,3 +94,15 @@ zip -r Documents.zip Documents/
 # raspberry pi OS commands
 - `rpicam-hello --list-cameras`: list raspberry pi cameras
 - `rpicam-still -t 0`: open raspberry pi camera live preview (debian trixie and bookworm)
+
+# arduino-cli commands
+- `arduino-cli sketch new <sketch_name>`: create a new sketch
+- `arduino-cli core update-index`: download the index
+    - `arduino-cli core update-index --config-file <config_file.yml>`
+- `arduino-cli core install esp32:esp32`: install esp32 packages
+- `arduino-cli board list`: list connected boards
+- `arduino-cli compile --b esp32:esp32:esp32 <sketch_path>`: compile sketch in `<sketch_path>` for esp32
+- `arduino-cli upload -p <serial_port> -b esp32:esp32:esp32 <sketch_path>`: upload complied sketch in `<sketch_path>` to device connected on `<serial_port>`
+    - on windows: `<serial_port>` may look like `COM0`, `COM7`, `COM8`, etc.
+    - on linux: `<serial_port>` may look like `/dev/ttyUSB0`, `/dev/ttyUSB1`, etc.
+- `arduino-cli monitor -p <serial_port>`: monitor serial port output, can be also used for input
