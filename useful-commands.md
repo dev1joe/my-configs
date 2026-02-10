@@ -22,7 +22,7 @@
 # get image metadata
 `identify image.jpg`
 or
-`identify -verbose image.jpg`
+`identify -verbose image.jp`
 or
 file image.jpg
 
@@ -31,7 +31,7 @@ file image.jpg
 your-preset = pure-preset / gruvbox-rainbow / tokyo-night / etc...
 
 # zip a folder
-zip -r Documents.zip Documents/
+`zip -r Documents.zip Documents/`
 
 # install fonts
 - `sudo mv *.ttf /usr/share/fonts/`
@@ -43,6 +43,7 @@ zip -r Documents.zip Documents/
 - `yay -Qua` for only AUR packages, list those that need updating
 - `yay -Su` update all packages
 - `yay -Sua` update only AUR packages
+- `yay -Sy` refresh databases
 
 # git commands to remember
 - `git log`: display commits
@@ -106,3 +107,23 @@ zip -r Documents.zip Documents/
     - on windows: `<serial_port>` may look like `COM0`, `COM7`, `COM8`, etc.
     - on linux: `<serial_port>` may look like `/dev/ttyUSB0`, `/dev/ttyUSB1`, etc.
 - `arduino-cli monitor -p <serial_port>`: monitor serial port output, can be also used for input
+
+# linux default apps (xdg-open)
+- `xdg-mime query default <mime_type>`: get the default applications for a specific mime type
+    - example: `xdg-mime query default application/pdf` => firefox.desktop
+- `xdg-mime default <application.desktop> <mime_type>`: set a default application for a specific mime type
+    - example: `xdg-mime default brave-browser.desktop application/pdf`
+- `find /usr/share/applications ~/.local/share/applications /usr/local/share/applications -maxdepth 1 -type f -name "*.desktop" | sort`: to list all installed .desktop applications
+
+# bun commands
+- `bun run <commadn>`: `npm run` command equivalent from bun
+- `bunx --bun <command>`: bunx is an equivalent of npx (package runner), --bun flag is used for forcing the usage of bun intead of node.
+
+# Processes Management
+- `lsof -i :<port_number>`: check the process running on port `<port_number>`
+
+# file searching
+- `find <directory> -type <file_type> -iname '<fileN_name>*'`
+    - example: `find ./components -type f -iname 'navbar*'` => ./components/Navbar.tsx
+    - `-iname` flag indicates "case insensitive caseing"
+    - adding an astrisk wildcard (*) at the end of the file name is recommeded
