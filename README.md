@@ -42,8 +42,11 @@
 
 - [ ] nvidia-drivers
 
-
-
 - [ ] custom monitors' profile switcher using SUPER + P (J in halmak)
 - [ ] custom keyboard config file switcher
 - [ ] how about changing a variable instead of a whole file ?? try it! but for monitors I have to cycle between files, I can't use variables
+
+### GNU stow
+- TODO: install GNU stow after system installation
+- TODO: structure files like they should be in your home directory (~/)
+- TODO: run `stow -t ~ .` (symlink this directory in ~ (target directory))

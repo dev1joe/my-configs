@@ -1,0 +1,30 @@
+# my files
+/browser
+/scripts
+/sddm
+/starship
+useful-commands.md
+vimrc.local
+
+# other files
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
