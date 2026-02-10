@@ -50,3 +50,10 @@
 - TODO: install GNU stow after system installation
 - TODO: structure files like they should be in your home directory (~/)
 - TODO: run `stow -t ~ .` (symlink this directory in ~ (target directory))
+
+### Arduino IDE wayland fix
+- install `arduino-ide.AppImage` from there website
+- move `arduino-ide.AppImage` to `/opt/arduino-ide`
+- there are two config files.
+- copy each file to it's correct location and try to run the IDE
+- if it runs wth no problems, create a shell script that automates the process

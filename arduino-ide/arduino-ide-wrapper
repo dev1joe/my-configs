@@ -1,0 +1,24 @@
+#!/bin/bash
+# /usr/local/bin/arduino-ide-wrapper
+# Wrapper for Arduino IDE extracted AppImage for Wayland/Hyprland
+
+# Path to extracted AppImage
+# TODO: The AppImage should be copied from your Downloads to this location
+APPIMAGE="/opt/arduino-ide/arduino-ide.AppImage"
+
+# Environment variables
+export ELECTRON_OZONE_PLATFORM_HINT=x11     # Optional: use X11 via XWayland for stability
+export XDG_SESSION_TYPE=x11                  # Match the platform hint
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export LIBGL_ALWAYS_SOFTWARE=1              # Force software rendering
+export ELECTRON_ENABLE_LOGGING=1
+export ELECTRON_ENABLE_STACK_DUMPING=1
+export ELECTRON_NO_ATTACH_CONSOLE=1
+export ELECTRON_ENABLE_SANDBOX=0
+
+# Launch Arduino IDE
+"$APPIMAGE" \
+    --no-sandbox \
+    --disable-gpu \
+    --disable-software-rasterizer \
+    "$@"

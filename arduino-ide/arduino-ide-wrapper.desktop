@@ -1,0 +1,12 @@
+# this file can be located in:
+# /usr/share/applications
+# /usr/local/share/applications
+# ~/.local/share/applications
+
+[Desktop Entry]
+Name=Arduino IDE (Wayland Fix)
+Exec=/usr/local/bin/arduino-ide-wrapper
+Icon=arduino-ide
+Type=Application
+Categories=Development;IDE;
+Terminal=false
