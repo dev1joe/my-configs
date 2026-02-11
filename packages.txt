@@ -1,0 +1,13 @@
+kanata
+nautilus
+blueman
+firefox
+aur/brave-browser
+aur/visual-studio-code-bin
+hyprland
+hyprpaper
+hyprlock
+hyprlauncher
+waybar
+pavucontrol
+spotify

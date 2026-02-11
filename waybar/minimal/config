@@ -18,7 +18,7 @@
 
     // Load Modules
     "include": [
-        "../modules.json"
+        "~/.config/waybar/modules.json"
     ],
 
     // Updates Count
