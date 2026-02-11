@@ -38,12 +38,15 @@ your-preset = pure-preset / gruvbox-rainbow / tokyo-night / etc...
 - `fc-list` to list all available fonts
 - `fc-cache -fv` to rebuild the font cache
 
-# pacman and yay commands
+# pacman and yay commands (sudo pacman or yay (without sudo))
 - `yay -Qu` list packages that need updating
 - `yay -Qua` for only AUR packages, list those that need updating
 - `yay -Su` update all packages
 - `yay -Sua` update only AUR packages
 - `yay -Sy` refresh databases
+- `yay -R <package_name>` remove target package only, it's dependencies if not required by other packages, they're marked as orphans
+- `yay -Rs <package_name>` remove package and any dependencies that are no longer needed by any other installed packages
+- `yay -Rns <package_name>` (Recommended) removes the package, it's unneeded dependencies (recursive), and any associated config files (nosave)
 
 # git commands to remember
 - `git log`: display commits
