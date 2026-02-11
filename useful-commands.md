@@ -130,3 +130,9 @@ your-preset = pure-preset / gruvbox-rainbow / tokyo-night / etc...
     - example: `find ./components -type f -iname 'navbar*'` => ./components/Navbar.tsx
     - `-iname` flag indicates "case insensitive caseing"
     - adding an astrisk wildcard (*) at the end of the file name is recommeded
+
+# git auth using github-cli
+- install github-cli `sudo pacman -S github-cli`
+- run `gh auth login` to login with your account
+    - for me I prefer using http + web browser authtication instead of entering credentials
+- run `gh auth setupt-git` for setting `gh` as an authentication method for git

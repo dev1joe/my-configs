@@ -11,3 +11,4 @@ hyprlauncher
 waybar
 pavucontrol
 spotify
+github-cli
