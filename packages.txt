@@ -1,16 +1,15 @@
 kanata
 nautilus
-blueman
+network-manager-applet
+bluez bluez-libs  bluez-plugins bluez-tools bluez-utils blueman pulseaudio-bluetooth
+pavucontrol
+brightnessctl
 firefox
 aur/brave-browser
 aur/visual-studio-code-bin
-hyprland
-hyprpaper
-hyprlock
-hyprlauncher
+hyprland hyprpaper hyprlock hyprlauncher
 waybar
-pavucontrol
-spotify
+aur/spotify
 github-cli
 awesome-terminal-fonts
 wlogout
