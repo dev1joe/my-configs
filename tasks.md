@@ -43,7 +43,7 @@
 - [ ] wallpaper switcher
 - [ ] hyprland: moving windows on focus change
 - [ ] login manager
-- [ ] install brightnessctl
+- [X] install brightnessctl
 - [ ] install nwg-look
 - [ ] use 'Adwaita Sans' system wide (nwg-look, browsers, vscode, waybar, rofi, hyprland)
 - [ ] terminal rice [video](https://www.youtube.com/watch?v=tOZxKiZeOTU)

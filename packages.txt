@@ -1,17 +1,28 @@
-kanata
-nautilus
 network-manager-applet
 bluez bluez-libs  bluez-plugins bluez-tools bluez-utils blueman pulseaudio-bluetooth
+pipewire pipewire-audio pipewire-pulse pipewire-alsa
 pavucontrol
 brightnessctl
+kanata
+
+kitty
+aur/oh-my-posh
+fastfetch
+noto-fonts
+awesome-terminal-fonts
+ttf-nerd-fonts-symbols-3.4.0-1 
+ttf-nerd-fonts-symbols-common-3.4.0-1
+
+hyprland hyprpaper hyprlock hyprlauncher
+aur/ags-hyprpanel-git
+
+nautilus
 firefox
 aur/brave-browser
 aur/visual-studio-code-bin
-hyprland hyprpaper hyprlock hyprlauncher
-waybar
 aur/spotify
 github-cli
-awesome-terminal-fonts
 wlogout
-ttf-nerd-fonts-symbols-3.4.0-1 
-ttf-nerd-fonts-symbols-common-3.4.0-1
+aur/nwg-look
+gnome-themes-extra
+docker docker-compose docker-buildx
