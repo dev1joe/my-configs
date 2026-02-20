@@ -82,6 +82,7 @@ your-preset = pure-preset / gruvbox-rainbow / tokyo-night / etc...
 - `ssh <username>@<ip_address>`: ssh into the machine with `<ip_address>` with the user `<username>`
 - `scp <file_path> <username>@<ip_address>:<destination_path>`: use scp (dependant on ssh) to copy files to `<ip_address>`
     - use the `-r` flag if you're copying a folder
+- `lspci -knn | grep -i net -A2`: check physical WiFi/bluetooth chip information
 
 # Python
 - `python3 -m venv <path>/<venv_name>`: create a python virtual environment
@@ -135,4 +136,4 @@ your-preset = pure-preset / gruvbox-rainbow / tokyo-night / etc...
 - install github-cli `sudo pacman -S github-cli`
 - run `gh auth login` to login with your account
     - for me I prefer using http + web browser authtication instead of entering credentials
-- run `gh auth setupt-git` for setting `gh` as an authentication method for git
+- run `gh auth setup-git` for setting `gh` as an authentication method for git
